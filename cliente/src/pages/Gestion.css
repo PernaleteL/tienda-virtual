@@ -1,0 +1,276 @@
+.contenedor-principal {
+    display: flex;
+    flex: 1 1; /* Cambia a flex para que los elementos se ajusten verticalmente */
+    width: 100vw;
+    /*background-image: url("./img/fon3.jpg");*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    align-items: center; /* Centra los elementos horizontalmente */
+    position: relative; /* Asegura que la imagen de fondo se mantenga en su posición */
+}
+.contenedor{
+    background: #1a1a1a;
+    height: 446px;
+}
+.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    flex: 1; /* Permite que este contenedor ocupe el espacio restante */
+}
+
+.contenido{
+    margin-left: 280px;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+/*SIDEBAR*/
+.sidebar{
+    background: #1a1a1a;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 280px;
+    font-size: 25px;
+}
+.img-logo{
+    left: 0;
+    height: 280px;
+}
+ul{
+    padding-left: 0;
+    margin-left: 2rem;
+    text-decoration: none;
+    list-style: none;
+}
+.sidebar li{
+    padding: 7px 5px ;
+}
+.estoy{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    transform: translateY(0);
+    box-shadow:inset 0 0 30px #3300ff,
+    inset 20px 0 40px #ff007f,
+    inset -20px 0 40px #00eeff,
+    inset 20px 0 150px #ff007f,
+    inset -20px 0 150px #00eeff,
+    0 0 20px #ffffff,
+    -10px 0 40px #ff007f,
+    10px 0 40px #00eeff;
+    cursor: pointer;
+}
+.lista{
+    height: 53px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+}
+.contenedor-li{
+    display: flex;
+    margin-left: 0px;
+    gap: 10px;
+}
+.ico{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+.div-ico{
+    border-radius: 25px;
+    left: 1px;
+    top: 1px;
+    padding: 1px;
+    height: 45px;
+    width: 45px;
+    position: relative;
+    background: linear-gradient(to bottom, #00FFFF, #002FA7);
+}
+li{
+    position: absolute;
+    top: -4px;
+}
+.no-estoy:hover{
+    background: linear-gradient(to bottom, #00FFFF, #002FA7);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    cursor: pointer;
+}
+.btn-out{ 
+    border: 0;
+    opacity: 0.9;
+    cursor: pointer;
+    border-radius: 15px;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 5px 15px;
+    background: #1a1a1a;
+    border: #1a1a1a solid;
+    font-weight: 600;
+    font-size: 22px;
+}
+.div-out{
+    position: fixed;
+    bottom: 20px;
+    left: 55px;
+    background:#1a1a1a ;
+}
+.btn-out:hover{
+    border: #F31339 solid;
+    color: #F31339;
+}
+
+/*HEADER*/
+nav{
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0;
+}
+.div-datos{
+    position: absolute;
+    right: 2rem;
+}
+.div-nombre{
+    display: flex;
+    gap: 5px;
+    text-transform: capitalize;
+    justify-content: center;
+}
+
+/*GESTION*/
+.isAdmin{
+    display: flex;
+}
+.noAdmin{
+    display: none;
+}
+.btn-g{
+    background: #1a1a1a;
+}
+.cuerpo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:transparent ;
+    border: none;
+}
+.contenedor-gestion{
+    background: #1a1a1a;
+    width: 530px;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.campo{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 7px;
+}
+.campo-p{
+    width: 95px;
+    font-weight: 400;
+    font-weight: bold;
+    margin: 0;
+}
+.input-campo{
+    width: 350px;
+    padding: 5px 5px 5px 14px;
+    border-radius: 20px;
+    border: none;
+    color: #1a1a1a;
+    margin-bottom: 5px;
+}
+.h2{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3.5em;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4, 
+    0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+    letter-spacing: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 1s;
+}
+.btn-eliminar{
+    padding: 4px 9px;
+    border-radius: 15px;
+    border: none;
+    color: #1a1a1a;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #FF0000, #ff4040);
+}
+.btn-modificar{
+    padding: 4px 9px;
+    border-radius: 15px;
+    border: none;
+    color: #1a1a1a;
+    font-weight: bold;
+  background: linear-gradient(to bottom, #00FFFF, #002FA7);
+}
+.btn-cancelar{
+    padding: 4px 9px;
+    border-radius: 15px;
+    border: none;
+    color: #1a1a1a;
+    font-weight: bold;
+    background: linear-gradient(to bottom, #FFA500, #FF7D2F);
+}
+.btn-gp{
+    font-size: 25px;
+    font-weight: bold;
+    padding: 4px 9px;
+    border-radius: 15px;
+    border: none;
+    width: 170px;
+    height: 80px;
+    padding: 5px 10px;
+    margin: 20px 5px;
+    transform: translateY(0);
+    box-shadow: inset 0 0 30px #008fb2,
+                 inset 20px 0 40px #002FA7,
+                 inset -20px 0 40px #00FFFF,
+                 inset 20px 0 150px #002FA7,
+                 inset -20px 0 150px #00FFFF,
+                 0 0 20px #ffffff,
+                 -10px 0 40px #0066cc,
+                 10px 0 40px #00b2ff;
+    color: aliceblue;
+    cursor: pointer;
+}
+.btn-gp:hover {
+    box-shadow: inset 0 0 30px #0066cc,
+               inset 20px 0 40px #00228b,
+               inset -20px 0 40px #007f80,
+               inset 20px 0 150px #00228b,
+               inset -20px 0 150px #007f80,
+               0 0 20px #ffffff,
+               -10px 0 40px #0044aa,
+               10px 0 40px #0088cc;
+  color: royalblue;
+  }
+.panel-btn{
+    gap: 5px;
+    padding: 15px 2px 5px 2px;
+}
+.botones{
+}
+.btn{
+    margin: 0 5px;
+}

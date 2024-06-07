@@ -1,0 +1,238 @@
+.contenedor-principal {
+    display: flex;
+    flex: 1 1; /* Cambia a flex para que los elementos se ajusten verticalmente */
+    width: 100vw;
+    /*background-image: url("./img/fon3.jpg");*/
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    min-height: 100vh;
+    overflow-x: hidden;
+    align-items: center; /* Centra los elementos horizontalmente */
+    position: relative; /* Asegura que la imagen de fondo se mantenga en su posición */
+}
+.contenedor{
+    background: #1a1a1a;
+    height: 446px;
+}
+.contenedor-productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    flex: 1; /* Permite que este contenedor ocupe el espacio restante */
+}
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    margin-left: 280px;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
+}
+/*SIDEBAR*/
+.sidebar{
+    background: #1a1a1a;
+    position: fixed;
+    top: 0;
+    height: 100vh;
+    width: 280px;
+    font-size: 25px;
+}
+.img-logo{
+    left: 0;
+    height: 280px;
+}
+ul{
+    padding-left: 0;
+    margin-left: 2rem;
+    text-decoration: none;
+    list-style: none;
+}
+.sidebar li{
+    padding: 7px 5px ;
+}
+.estoy{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    transform: translateY(0);
+    box-shadow:inset 0 0 30px #3300ff,
+    inset 20px 0 40px #ff007f,
+    inset -20px 0 40px #00eeff,
+    inset 20px 0 150px #ff007f,
+    inset -20px 0 150px #00eeff,
+    0 0 20px #ffffff,
+    -10px 0 40px #ff007f,
+    10px 0 40px #00eeff;
+}
+.lista{
+    height: 53px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    position: relative;
+}
+.contenedor-li{
+    display: flex;
+    margin-left: 0px;
+    gap: 10px;
+}
+.ico{
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 7px;
+    left: 7px;
+}
+.div-ico{
+    border-radius: 25px;
+    left: 1px;
+    top: 1px;
+    padding: 1px;
+    height: 45px;
+    width: 45px;
+    position: relative;
+    background: linear-gradient(to bottom, #00FFFF, #002FA7);
+}
+li{
+    position: absolute;
+    top: -4px;
+}
+.no-estoy:hover{
+    background: linear-gradient(to bottom, #00FFFF, #002FA7);
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+    cursor: pointer;
+}
+.btn-out{ 
+    border: 0;
+    opacity: 0.9;
+    cursor: pointer;
+    border-radius: 15px;
+    color: aliceblue;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 5px 15px;
+    background: #1a1a1a;
+    border: #1a1a1a solid;
+    font-weight: 600;
+    font-size: 22px;
+}
+.div-out{
+    position: fixed;
+    bottom: 20px;
+    left: 55px;
+    background:#1a1a1a ;
+}
+.btn-out:hover{
+    border: #F31339 solid;
+    color: #F31339;
+}
+
+/*HEADER*/
+nav{
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    padding: 10px 0;
+    height: 150px;
+    top: 0;
+}
+.div-datos{
+    position: absolute;
+    right: 2rem;
+}
+.div-nombre{
+    display: flex;
+    gap: 5px;
+    text-transform: capitalize;
+    justify-content: center;
+}
+h1{
+    color: aliceblue;
+}
+.button {
+    width: 350px;
+    height: 110px;
+    font-family: 'Orbitron', sans-serif;
+    --glow-color: rgb(217, 176, 255);
+    --glow-spread-color: rgba(191, 123, 255, 0.781);
+    --enhanced-glow-color: rgb(231, 206, 255);
+    --btn-color: rgb(100, 61, 136);
+    border: .25em solid var(--glow-color);
+    padding: 0.5em 1.5em;
+    color: var(--glow-color);
+    font-size: 25px;
+    font-weight: bold;
+    background-color: var(--btn-color);
+    border-radius: 1em;
+    outline: none;
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 1em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+    text-shadow: 0 0 .5em var(--glow-color);
+    position: relative;
+    transition: all 0.3s;
+   }
+   .button::after {
+    pointer-events: none;
+    content: "";
+    position: absolute;
+    top: 120%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--glow-spread-color);
+    filter: blur(2em);
+    opacity: .7;
+    transform: perspective(1.5em) rotateX(35deg) scale(1, .6);
+   }
+   .button:hover {
+    color: var(--btn-color);
+    background-color: var(--glow-color);
+    box-shadow: 0 0 1em .25em var(--glow-color),
+           0 0 4em 2em var(--glow-spread-color),
+           inset 0 0 .75em .25em var(--glow-color);
+   }
+   .button:active {
+    box-shadow: 0 0 0.6em .25em var(--glow-color),
+           0 0 2.5em 2em var(--glow-spread-color),
+           inset 0 0 .5em .25em var(--glow-color);
+   }
+   .conte-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+   }
+   .h3{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4.5em;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4, 
+    0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+    letter-spacing: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 1s;
+   }
+   .h4{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2.5em;
+    font-weight: 500;
+    color: #fff;
+    text-shadow: 0 0 5px #03e9f4,
+    0 0 25px #03e9f4, 
+    0 0 50px #03e9f4,
+    0 0 100px #03e9f4;
+    letter-spacing: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 1s;
+    margin: 2rem;
+   }
